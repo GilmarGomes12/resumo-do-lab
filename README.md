@@ -1,36 +1,32 @@
 # resumo-do-lab
 Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab.
 
-IaaS, PaaS e SaaS na Azure
-A Azure, plataforma de computação em nuvem da Microsoft, oferece três modelos principais de serviços em nuvem:
+Resumo dos Tópicos de Arquitetura do Azure
+1. Componentes de Arquitetura do Azure:
 
-IaaS (Infraestrutura como Serviço):
-Fornece acesso a recursos de computação virtualizados, como servidores, armazenamento e redes.
-O cliente gerencia o sistema operacional, aplicativos e dados, enquanto a Azure cuida da infraestrutura física.
-Oferece flexibilidade e controle, ideal para cargas de trabalho personalizadas.
-PaaS (Plataforma como Serviço):
-Fornece um ambiente de desenvolvimento e implantação completo, incluindo ferramentas, servidores e infraestrutura.
-O cliente gerencia os aplicativos e dados, enquanto a Azure cuida do resto, como sistemas operacionais e atualizações.
-Simplifica o desenvolvimento e a implantação de aplicativos, permitindo que os desenvolvedores se concentrem na codificação.
-SaaS (Software como Serviço):
-Fornece aplicativos de software completos, acessíveis pela Internet.
-A Azure gerencia tudo, desde a infraestrutura até a manutenção do aplicativo.
-Os clientes usam o software como um serviço, sem se preocupar com a instalação ou manutenção.
-Exemplos incluem o Microsoft 365 e o Dynamics 365.
-Modelo de Responsabilidade Compartilhada
-O modelo de responsabilidade compartilhada define as responsabilidades entre o provedor de nuvem (Azure) e o cliente. Em geral:
+O Azure é uma plataforma de computação em nuvem que oferece uma vasta gama de serviços e recursos. Sua arquitetura é composta por diversos componentes interconectados, incluindo:
+Regiões: Locais geográficos onde os datacenters do Azure estão localizados.
+Zonas de disponibilidade: Datacenters fisicamente separados dentro de uma região, que fornecem alta disponibilidade e resiliência.
+Recursos: Entidades gerenciáveis, como máquinas virtuais, bancos de dados e redes virtuais.
+Grupos de recursos: Contêineres lógicos que agrupam recursos relacionados para facilitar o gerenciamento.
+Redes virtuais: Redes privadas na nuvem que permitem a comunicação entre recursos do Azure.
+Serviços de computação: Incluem máquinas virtuais, funções sem servidor e serviços de contêineres.
+Serviços de armazenamento: Oferecem diversas opções para armazenamento de dados, como blobs, arquivos e bancos de dados.
+Serviços de banco de dados: Fornecem bancos de dados relacionais e não relacionais gerenciados.
+Serviços de rede: Permitem a conexão de recursos do Azure e a comunicação com redes locais.
+Segurança: O Azure oferece ferramentas e serviços para proteger seus recursos e dados na nuvem.
+Para um melhor entendimento sobre a arquitetura do Azure, é necessário entender sobre a topologia de rede de um datacenter do Azure, que consiste nos seguintes componentes: Rede de borda, Rede de longa distância e Rede de gateways regionais.
+É de extrema importância entender os estilos típicos de arquitetura, cargas de trabalho e práticas recomendadas do Azure Well-Architected Framework, que são: Confiabilidade, Segurança, Otimização de Custos, Excelência Operacional e Eficiência de Desempenho.
+2. Entendendo Pares de Região e Grupos de Recursos:
 
-A Azure é responsável pela segurança da infraestrutura física e pela disponibilidade dos serviços.
-O cliente é responsável pela segurança dos dados, aplicativos e configurações que implanta na nuvem.
-A divisão exata das responsabilidades varia dependendo do modelo de serviço (IaaS, PaaS ou SaaS). Quanto mais alto o nível de serviço, mais responsabilidades a Azure assume.
-Tipos de Serviço de Nuvem
-Além dos modelos IaaS, PaaS e SaaS, existem outros tipos de serviços de nuvem:
+Pares de região: Regiões do Azure emparelhadas dentro da mesma geografia, que fornecem redundância e recuperação de desastres.
+Grupos de recursos: Contêineres lógicos que agrupam recursos relacionados para facilitar o gerenciamento, a implantação e o controle de acesso.
+3. Assinatura da Azure e Grupos de Gerenciamentos:
 
-Computação sem servidor:
-Permite executar código sem gerenciar servidores.
-A Azure gerencia a infraestrutura e dimensiona os recursos automaticamente.
-Ideal para cargas de trabalho com picos de demanda ou eventos acionados.
-Contêineres:
-Fornece uma plataforma para criar e gerenciar contêineres, que são unidades de software padronizadas.
-A Azure oferece serviços como o Azure Kubernetes Service (AKS) para orquestrar contêineres.
-Facilita a implantação e o gerenciamento de aplicativos em escala.
+Assinatura do Azure: Uma unidade lógica de faturamento e gerenciamento que permite o acesso aos serviços do Azure.
+Grupos de gerenciamento: Contêineres que permitem organizar assinaturas em uma hierarquia, facilitando a aplicação de políticas e o controle de acesso em escala.
+4. Componentes de arquitetura do Azure - Revisão:
+
+É essencial revisar e compreender os componentes da arquitetura do Azure para projetar e implementar soluções eficientes e seguras na nuvem.
+Para tal, existe o Centro de Arquitetura do Azure, que fornece orientação e melhores práticas para projetar soluções na plataforma Azure.
+A arquitetura do Azure é uma estrutura complexa e flexível que permite às organizações criar e gerenciar aplicativos e serviços na nuvem.
